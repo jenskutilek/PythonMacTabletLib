@@ -1,0 +1,213 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6179D5491556204C00956A39 /* tablet.c in Sources */ = {isa = PBXBuildFile; fileRef = 6179D5481556204C00956A39 /* tablet.c */; };
+		6179D54B1556207300956A39 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6179D54A1556207300956A39 /* ApplicationServices.framework */; };
+		6179D54D1556233A00956A39 /* tablet.h in Headers */ = {isa = PBXBuildFile; fileRef = 6179D54C1556233A00956A39 /* tablet.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6179D5411556202A00956A39 /* libTabletLibC.so */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libTabletLibC.so; sourceTree = BUILT_PRODUCTS_DIR; };
+		6179D5481556204C00956A39 /* tablet.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tablet.c; sourceTree = "<group>"; };
+		6179D54A1556207300956A39 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
+		6179D54C1556233A00956A39 /* tablet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tablet.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6179D53E1556202900956A39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6179D54B1556207300956A39 /* ApplicationServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6179D5361556202900956A39 = {
+			isa = PBXGroup;
+			children = (
+				6179D54A1556207300956A39 /* ApplicationServices.framework */,
+				6179D5481556204C00956A39 /* tablet.c */,
+				6179D54C1556233A00956A39 /* tablet.h */,
+				6179D5421556202A00956A39 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6179D5421556202A00956A39 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6179D5411556202A00956A39 /* libTabletLibC.so */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6179D53F1556202900956A39 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6179D54D1556233A00956A39 /* tablet.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6179D5401556202900956A39 /* TabletLibC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6179D5451556202A00956A39 /* Build configuration list for PBXNativeTarget "TabletLibC" */;
+			buildPhases = (
+				6179D53D1556202900956A39 /* Sources */,
+				6179D53E1556202900956A39 /* Frameworks */,
+				6179D53F1556202900956A39 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TabletLibC;
+			productName = TabletLibTest01;
+			productReference = 6179D5411556202A00956A39 /* libTabletLibC.so */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6179D5381556202900956A39 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 6179D53B1556202900956A39 /* Build configuration list for PBXProject "TabletLibC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6179D5361556202900956A39;
+			productRefGroup = 6179D5421556202A00956A39 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6179D5401556202900956A39 /* TabletLibC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6179D53D1556202900956A39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6179D5491556204C00956A39 /* tablet.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6179D5431556202A00956A39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		6179D5441556202A00956A39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		6179D5461556202A00956A39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				EXECUTABLE_EXTENSION = so;
+				EXECUTABLE_PREFIX = lib;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = TabletLibC;
+				VALID_ARCHS = "i386 x86_64";
+			};
+			name = Debug;
+		};
+		6179D5471556202A00956A39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				EXECUTABLE_EXTENSION = so;
+				EXECUTABLE_PREFIX = lib;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = TabletLibC;
+				VALID_ARCHS = "i386 x86_64";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6179D53B1556202900956A39 /* Build configuration list for PBXProject "TabletLibC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6179D5431556202A00956A39 /* Debug */,
+				6179D5441556202A00956A39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6179D5451556202A00956A39 /* Build configuration list for PBXNativeTarget "TabletLibC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6179D5461556202A00956A39 /* Debug */,
+				6179D5471556202A00956A39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6179D5381556202900956A39 /* Project object */;
+}
